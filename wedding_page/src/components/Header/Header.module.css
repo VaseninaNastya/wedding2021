@@ -1,0 +1,49 @@
+
+.header{
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s ease 0s;
+
+}
+.header__active{
+  height: 40vh;
+  transition: all 1s ease 0s;
+  
+}
+.header .h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 50%;
+  position: sticky;
+  top: 0;
+  transition: all 1s ease 0s;
+}
+.header .h1__active{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  transition: all 1s ease 0s;
+}
+.header .main_info{
+  height: 50%;
+  transition: top 1s ease 0s;
+  opacity: 0;
+  z-index: 5;
+  background-color: white;
+  position: sticky;
+  top: 200vh; 
+}
+.header .main_info__active{
+  transition: top 1s ease 0s;
+  opacity: 1;
+  height: auto;
+  position: relative;
+  top: 5vh;
+}
