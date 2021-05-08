@@ -1,8 +1,25 @@
 .App {
   text-align: center;
   margin: 0 auto;
+  height: 6000px;
+  background-color: #717DD7;
+ /* background: linear-gradient(#717DD7, white)  ;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: 	#081472;
+  transition: all 1s ease 0s;
 }
-
+.App_2part{
+  text-align: center;
+  margin: 0 auto;
+  height: 6000px;
+  background-color: hsla(70, 95%, 71%, 0.521);
+  /*background: linear-gradient(#E5FB71, white)  ;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: 	#3a4400;
+  transition: all 1s ease 0s;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
