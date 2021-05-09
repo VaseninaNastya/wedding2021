@@ -28,7 +28,7 @@ class App extends React.PureComponent {
     return (
       <div           className={
         this.state.scrollPosition >=
-        document.documentElement.clientHeight * 2.2
+        document.documentElement.clientHeight *2.5 * document.documentElement.clientHeight/ document.documentElement.clientWidth
           ? "App_2part"
           : "App"
       }>

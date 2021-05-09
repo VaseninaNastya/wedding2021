@@ -70,7 +70,7 @@ li {
 }
 
 .picture_bike {
-  margin-top: calc(15vh - 50px);
+  margin-top: calc(15vh - 10px);
   margin-left: 0;
   margin-right: calc(100% - 10px);
   height: 25vh;
@@ -179,7 +179,7 @@ li {
   top: calc(20%);
   bottom: 0;
   right: 0;
-  height: 30vh;
+  height: 20vh;
   width: 30%;
   background-image: url("../../img/trees.png");
   background-size: contain;
@@ -195,12 +195,11 @@ li {
   left: calc(50% - 1200px / 2);
 }
 .infoForBikers_text {
-  margin: 30px auto;
-  width: 70%;
+  margin: 10px auto;
+  width: 90%;
   line-height: 28px;
 }
 .infoForBikers_text_title {
-  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -208,9 +207,9 @@ li {
   margin-top: 20px;
 }
 .infoForCarRiders {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 5px;
   padding: 7px;
 }
@@ -277,8 +276,9 @@ a:hover {
   justify-content: space-between;
 }
 .lesok_picture_container__white {
-  height: 540px;
-  width: 1200px;
+  height: 60vh;
+
+  width: calc(2.35 * 60vh);
 
   margin: 0 auto;
   background-image: url("../../img/rotonda.png");
@@ -287,8 +287,9 @@ a:hover {
   transition: all 1s ease 0s;
 }
 .lesok_picture_container__black {
-  height: 540px;
-  width: 1200px;
+  height: 60vh;
+
+  width: calc(2.35 * 60vh);
   margin: 0 auto;
   background-image: url("../../img/rotonda.png");
   background-repeat: no-repeat;
@@ -362,6 +363,7 @@ a:hover {
 .ps {
   margin-top: 20px;
 }
+
 @media (max-width: 1199px) and (min-width: 767px) {
   .container {
     width: 100%;

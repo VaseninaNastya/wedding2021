@@ -60,9 +60,9 @@ class TextBlock extends React.PureComponent {
                     ? {
                         marginLeft:
                           (this.state.scrollPosition *
-                            this.state.scrollPosition) /
-                            2800 -
-                          700 +
+                            this.state.scrollPosition * (document.documentElement.clientHeight/document.documentElement.clientWidth)) /
+                            400 -
+                          2300*(document.documentElement.clientHeight/document.documentElement.clientWidth) +
                           "px",
                       }
                     : this.state.scrollPosition >=
@@ -85,7 +85,6 @@ class TextBlock extends React.PureComponent {
                 электричке):
               </span>
               <p>
-                <br />
                 ждем тебя на Финляндском вокзале, в 11.30. Велосипеды
                 приветствуются! <br />
                 Мы очень надеемся, что погода не подведет, и получится
