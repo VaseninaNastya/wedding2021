@@ -33,7 +33,7 @@
 }
 .header .main_info {
   padding: 10px;
-  width: 27vh;
+  width: auto;
   margin: 0 auto;
   margin-top: 30px;
   transition: all 1s ease 0s;
@@ -42,21 +42,21 @@
   padding-bottom: 10px;
   background-color: white;
   border-radius: 50px;
-  line-height: 3vh;
-  font-size: 2vh;
+  line-height: 26px;
+  font-size: 22px;
 }
 .header .main_info__active {
   padding: 10px;
-  width: 27vh;
+  width: auto;
   margin: 0 auto;
   transition: all 1s ease 0s;
   opacity: 1;
   height: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   background-color: white;
   border-radius: 50px;
-  line-height: 3vh;
-  font-size: 2vh;
+  line-height: 26px;
+  font-size: 22px;
 }
 h1 {
   line-height: 7vh;
