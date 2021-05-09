@@ -1,63 +1,63 @@
-  
 *,
 *:before,
 *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-* { box-sizing: border-box }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family:  'PT Sans', 'Open Sans',
-    sans-serif;
+  font-family: "PT Sans", "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   line-height: 22px;
 }
 
-ul, li{
+ul,
+li {
   display: block;
   padding: 0;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
-
 }
-a:hover{
-cursor: pointer;
+a:hover {
+  cursor: pointer;
 }
-li{
+li {
   list-style: none;
 }
 
-.container{
-    width: 1200px;
-    margin: 0 auto;
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
-.picture_container{
-width: 100%;
-height: 100vh;
-/*background-color: 	#2E3884;*/
-animation-name: movement;
-animation-duration: 2s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
-position: relative;
-top: 0;
-transition: all 1s ease 0s;
-overflow: hidden;
-width: 1200px;
-left: calc(50% - 1200px/2);
-}
-.picture_container__active{
+.picture_container {
+  width: 100%;
+  height: 100vh;
+  /*background-color: 	#2E3884;*/
   animation-name: movement;
-animation-duration: 2s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: relative;
+  top: 0;
+  transition: all 1s ease 0s;
+  overflow: hidden;
+  width: 1200px;
+  left: calc(50% - 1200px / 2);
+}
+.picture_container__active {
+  animation-name: movement;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   width: 100%;
   height: 100vh;
   /*background-color: 	#2E3884;*/
@@ -66,211 +66,148 @@ animation-iteration-count: infinite;
   transition: all 1s ease 0s;
   overflow: hidden;
   width: 1200px;
-  left: calc(50% - 1200px/2);
+  left: calc(50% - 1200px / 2);
 }
 
-.picture_bike{
+.picture_bike {
   margin-top: calc(15vh - 50px);
-margin-left: 0;
-margin-right: calc(100% - 10px);
-height: 25vh;
-width: 44.7vh;
-background-image: url('../../img/bike_kola_outlined1.png');
-background-size: contain;
-background-repeat: no-repeat;
+  margin-left: 0;
+  margin-right: calc(100% - 10px);
+  height: 25vh;
+  width: 44.7vh;
+  background-image: url("../../img/bike_kola_outlined1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 100 !important;
+  position: absolute;
 }
-@keyframes movement
-{
+@keyframes movement {
   0% {
-    background-image: url('../../img/stars.png');
-   }
-   50% {
-    background-image: url('../../img/stars2.png');
-   }
-   100%{
-    background-image: url('../../img/stars.png');
-   }
+    background-image: url("../../img/stars.png");
+  }
+  50% {
+    background-image: url("../../img/stars2.png");
+  }
+  100% {
+    background-image: url("../../img/stars.png");
+  }
 }
-
-
-/*
-@keyframes movement
-{
-   from {
-         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
-   }
-   to {
-         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
-   }
-}
-@-moz-keyframes movement
-{
-   from {
-         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
-   }
-   to {
-         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
-   }
-}
-@-webkit-keyframes movement
-{
-   from {
-         background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
-   }
-   to {
-         background-position: -550px 0, -320px 60px, -120px 270px, -150px 150px;
-   }
-}
-/*
-.c-animated-background {
-  background-color: #2E3884;
-
-  background-image:
-     -moz-radial-gradient(circle, #FFFFFF 2px, rgba(248,255,128,.5) 4px, transparent 10px),
-     -moz-radial-gradient(circle, #FFFFFF 1px, rgba(255,186,170,.4) 3px, transparent 10px),
-     -moz-radial-gradient(ellipse, rgba(255,255,255,.9) 1px, rgba(251,255,186,.3) 2px, transparent 10px),
-     -moz-radial-gradient(ellipse, rgba(255,255,255,.4), rgba(253,255,219,.2) 1px, transparent 10px);
-
-  background-image:
-     -webkit-gradient(radial, 50% 50%, 2, 50% 50%, 10, from(white), color-stop(0.1, rgba(248,255,128,.5)), to(transparent)),
-     -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 7, from(white), color-stop(0.1, rgba(255,186,170,.4)), to(transparent)),
-     -webkit-gradient(radial, 50% 50%, 1, 50% 50%, 10, from(rgba(255,255,255,.9)), color-stop(0.05, rgba(251,255,186,.3)), to(transparent)),
-     -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 7, from(rgba(255,255,255,.4)), color-stop(0.03, rgba(253,255,219,.2)), to(transparent));
-
-  background-size: 550px 550px, 350px 350px, 250px 270px, 220px 200px;
-  background-position: 0 0, 30px 60px, 130px 270px, 70px 150px;
-
-  animation-name: movement;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-
-  -moz-animation-name: movement;
-  -moz-animation-duration: 5s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-
-  -webkit-animation-name: movement;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .picture {
   height: 46vh;
-width: 30vh;
-transform: rotate(35deg);
-background-image: url('../../img/we_outlined.png');
-background-size: contain;
-background-repeat: no-repeat;
+  width: 30vh;
+  transform: rotate(35deg);
+  background-image: url("../../img/we_outlined.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 
   transition: all 2.5s ease 0s;
 }
 
-
-
-
-
-
-
-
 .picture__active {
-
-    transition: all 2.5s ease 0s;
-  }
-.mainInfo{
+  transition: all 2.5s ease 0s;
+}
+.mainInfo {
   position: relative;
   top: 0;
   width: 100%;
-  height: auto;
+  height: 450vh;
 }
-.mainInfo__static{
+.mainInfo__static {
   position: static;
 }
-.infoForBikers_container{
+.infoForBikers_container {
   height: 100vh;
   background-color: white;
   position: absolute;
-  top: -10vh;
+  top: 0;
   transition: all 1s;
   width: 1200px;
-left: calc(50% - 1200px/2);
-
+  left: calc(50% - 1200px / 2);
 }
-.infoForBikers_container__active{
+.infoForBikers_container__active {
   width: 1200px;
   transition: top 1s;
   height: 100vh;
   background-color: white;
   position: absolute;
-  top: -10vh;
-  left: calc(50% - 1200px/2);
-
+  top: 0;
+  left: calc(50% - 1200px / 2);
 }
 
-.infoForBikers_titles{
+.infoForBikers_titles {
   height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around
+  justify-content: space-around;
 }
-.infoForBikers_picture_container{
+.infoForBikers_picture_container {
   height: 40vh;
-  background-color: #f7f5e7;
+  background-color: #dfdfdf;
   overflow: hidden;
+  position: relative;
 }
 /*пока получается, этот не нужен класс. Он ничего не меняет*/
-.infoForBikers_container__active__fixed{
+.infoForBikers_container__active__fixed {
   height: 100vh;
   background-color: white;
-position: fixed;
-top: 0;
-width: 1200px;
-left: calc(50% - 1200px/2);
-
+  position: fixed;
+  top: 0;
+  width: 1200px;
+  left: calc(50% - 1200px / 2);
 }
 /*.infoForBikers_container__active__fixed svg{
 
 }*/
-.infoForBikers_container__active__fixed_after{
+
+.trees_front {
+  position: absolute;
+  top: calc(70%);
+  bottom: 0;
+  height: 30vh;
+  width: 30%;
+  background-image: url("../../img/trees.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(1.5);
+  z-index: 200;
+}
+.trees_back {
+  transform: scale(1.5);
+  position: absolute;
+  top: calc(20%);
+  bottom: 0;
+  right: 0;
+  height: 30vh;
+  width: 30%;
+  background-image: url("../../img/trees.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.infoForBikers_container__active__fixed_after {
   height: 100vh;
   background-color: white;
-position: relative;
-top: 50vh;
-width: 1200px;
-left: calc(50% - 1200px/2);
-
+  position: relative;
+  top: 150vh;
+  width: 1200px;
+  left: calc(50% - 1200px / 2);
 }
-.infoForBikers_text{
+.infoForBikers_text {
   margin: 30px auto;
   width: 70%;
   line-height: 28px;
 }
-.infoForBikers_text_title{
+.infoForBikers_text_title {
   margin-bottom: 10px;
   font-weight: 600;
 }
 
-.infoForCarRiders_textBlock{
+.infoForCarRiders_textBlock {
   margin-top: 20px;
 }
-.infoForCarRiders{
+.infoForCarRiders {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -280,69 +217,66 @@ left: calc(50% - 1200px/2);
 .infoForCarRiders_container__active .plans,
 .infoForCarRiders_container__active .infoForCarRiders,
 .infoForCarRiders_container__fixed .plans,
-.infoForCarRiders_container__fixed .infoForCarRiders
-{
+.infoForCarRiders_container__fixed .infoForCarRiders {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
 .infoForCarRiders_container__active__bright .plans,
-.infoForCarRiders_container__active__bright .infoForCarRiders
-{
+.infoForCarRiders_container__active__bright .infoForCarRiders {
   background-color: rgba(255, 255, 255, 0.85);
 }
-.plans{
+.plans {
   width: 40%;
   margin: 0 auto;
   border-radius: 5px;
   padding: 7px;
 }
-a{
+a {
   color: inherit;
   text-decoration: underline;
   font-weight: 600;
 }
-a:hover{
+a:hover {
   color: #b8b3d9;
 }
-.infoForCarRiders_container__fixed{
+.infoForCarRiders_container__fixed {
   height: 100vh;
   width: 100%;
-  background-image: url("../../img/les_dsc_1550.png");
-  transition: background-image 1s ease 0s;
   background-size: cover;
-position: fixed;
-top: 100vh;
-width: 1200px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  position: fixed;
+  background-image: url("../../img/les_dsc_1550.png");
+  top: 260vh;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.infoForCarRiders_container__active{
+.infoForCarRiders_container__active {
   position: absolute;
   height: 100vh;
   width: 100%;
   background-image: url("../../img/les_dsc_1550.png");
   background-size: cover;
-  top: calc(150vh);
+  top: 250vh;
   transition: background-image 1s ease 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.infoForCarRiders_container__active__bright{
+.infoForCarRiders_container__active__bright {
   position: absolute;
   height: 100vh;
   width: 100%;
   background-image: url("../../img/tmb_84260_8224.png");
   background-size: cover;
-  top: calc(150vh);
+  top: 250vh;
   transition: background-image 1s ease 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.lesok_picture_container__white{
+.lesok_picture_container__white {
   height: 540px;
   width: 1200px;
 
@@ -352,7 +286,7 @@ justify-content: space-between;
   background-size: contain;
   transition: all 1s ease 0s;
 }
-.lesok_picture_container__black{
+.lesok_picture_container__black {
   height: 540px;
   width: 1200px;
   margin: 0 auto;
@@ -361,57 +295,323 @@ justify-content: space-between;
   background-size: contain;
   transition: all 1s ease 0s;
 }
-.talents_container{
+.talents_container {
   position: absolute;
-  top: calc(260vh);
+  top: 360vh;
   height: 100vh;
   background-color: white;
   display: flex;
   padding: 30px;
   transition: all 1s ease 0s;
   width: 1200px;
-left: calc(50% - 1200px/2);
+  left: calc(50% - 1200px / 2);
 }
-.talents_container__active{
-  top: calc(250vh);
+.talents_container__active {
+  top: 350vh;
   width: 1200px;
-left: calc(50% - 1200px/2);
+  left: calc(50% - 1200px / 2);
 }
-.talentsAndAfterParty_text{
+.talentsAndAfterParty_text {
   height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-.talents{
+.talents {
   margin-top: 100vh;
   margin-bottom: 20px;
   transition: all 1s ease 0s;
 }
-.talents_container__active .talents{
+.talents_container__active .talents {
   margin-top: 0;
   transition: all 1s ease 0s;
 }
-.afterparty{
-  opacity: 0;
+.afterparty {
+  margin-top: 100vh;
   transition: all 0.5s ease 0s;
 }
-.afterparty__active{
-  opacity: 1;
+.afterparty__active {
+  margin-top: 0;
   transition: all 0.5s ease 0s;
 }
-.talents_picture{
+.talents_picture {
   height: 100%;
   width: 50%;
   background-image: url("../../img/we2_outlined_trees.png");
   background-repeat: no-repeat;
   background-size: cover;
-  	
-background-position: bottom
+  margin-left: 30px;
+  background-position: bottom;
 }
 
-.talents_title{
-font-weight: 600;
-padding-bottom: 20px;
+.talents_title {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.main_info_container2 {
+  font-weight: 600;
+  line-height: 28px;
+  background-color: hsla(70, 95%, 71%, 0.521);
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 7px;
+}
+.ps {
+  margin-top: 20px;
+}
+@media (max-width: 1199px) and (min-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .picture_container {
+    width: 100%;
+  }
+  .lesok_picture_container__black,
+  .lesok_picture_container__white,
+  .infoForCarRiders_container__fixed {
+    width: 100%;
+  }
+
+  .talents_container__active,
+  .talents_container,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active,
+  .infoForBikers_container,
+  .picture_container__active,
+  .picture_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+
+  .talents_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container,
+  .infoForBikers_container__active {
+    left: 0;
+  }
+  .infoForBikers_text {
+    width: 90%;
+  }
+  .infoForBikers_titles {
+    height: auto;
+  }
+  .infoForBikers_titles h2 {
+    line-height:30px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .infoForBikers_titles h3 {
+    line-height: 25px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .infoForBikers_picture_container{
+    margin-top: 20px;
+  }
+  .main_info_container2 {
+
+    width: 90%;
+
+  }
+  .talents_title{
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  h1 {
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .container {
+    width: 100%;
+  }
+  .picture_container {
+    width: 100%;
+  }
+  .lesok_picture_container__black,
+  .lesok_picture_container__white,
+  .infoForCarRiders_container__fixed {
+    width: 100%;
+
+  }
+  .talents_container__active,
+  .talents_container,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active,
+  .infoForBikers_container,
+  .picture_container__active,
+  .picture_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+  .talents_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container,
+  .infoForBikers_container__active {
+    left: 0;
+    padding: 15px;
+    height: auto;
+  }
+  .infoForBikers_text {
+    width: 90%;
+  }
+  .infoForBikers_titles h2 {
+    line-height: 7vw;
+    font-size: 6vw;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .infoForBikers_titles h3 {
+    line-height: 6vw;
+    font-size: 5vw;
+    margin-bottom: 10px;
+  }
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .trees_back{
+    top: calc(10%);
+    bottom: 0;
+    right: 0;
+    height: 30%;
+    width: 30%;
+
+  }
+  .infoForBikers_picture_container{
+height: 300px;
+  }
+  .infoForBikers_text {
+    line-height: inherit;
+  }
+ .lesok_picture_container__black,
+  .lesok_picture_container__white {
+    width: 90%;
+    margin-top: 30vh;
+    margin-bottom: 10px;
+    height: 45vw;
+  }
+  .infoForBikers_text {
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .infoForBikers_text p br {
+    height: 0px;
+  }
+  .infoForBikers_titles {
+    height: auto;
+  }
+  .infoForBikers_text_title {
+    margin-bottom: 0;
+  }
+  .header .h1 {
+    height: 50%;
+  }
+  .main_info_container,
+  .main_info_container__active {
+    height: 50% !important;
+  }
+  .infoForCarRiders,
+  .plans {
+    width: 90%;
+  }
+  .infoForBikers_container__active__fixed,
+  .infoForCarRiders_container__fixed,
+  .infoForCarRiders_container__active,
+  .infoForCarRiders_container__active__bright,
+  .talents_container,
+  .talents_container__active,
+  .form_container,
+  .infoForBikers_container{
+    position: static;
+  }
+  .infoForCarRiders_container__fixed,
+  .infoForCarRiders_container__active,
+  .infoForCarRiders_container__active__bright{
+    background-image: none;
+    background: inherit;
+    height: auto;
+  }
+  .talents_picture{
+    display: none;
+  }
+  .talents_container,
+  .talents_container__active{
+    background-image: url("../../img/we2_outlined_trees_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 10px;
+    height: auto;
+  }
+  .infoForBikers_container__active__fixed_after {
+    top: 0vh;
+  }
+  .talentsAndAfterParty_text{
+width: 100%;
+  }
+  .talents,
+  .afterparty, .ps {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .ps{
+    width: auto !important;
+  }
+  .talents_title{
+padding-bottom: 5px;
+  }
+  .afterparty {margin-top: 20px;}
+  .main_info_container2{
+margin-bottom: 800px;
+width: 90%;
+padding: 5px;
+background-color: rgba(255, 255, 255, 0.9);
+  }
+  .trees_front {
+    top: calc(80%);
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+  }
+  .infoForBikers_picture_container{
+    margin-top: 20px;
+  }
+  .picture_bike, .picture_bike__active{
+    margin: 5% !important;
+    height: 70%;
+    width: 100%;
+    bottom: 10%;
+  }
+  .mainInfo{
+position: static;
+height: auto;
+  }
+  .form_Item_container_radio label:first-child{
+    width: 70%;
+  }
+  .form_container{
+    padding-bottom: 20px;
+  }
 }
