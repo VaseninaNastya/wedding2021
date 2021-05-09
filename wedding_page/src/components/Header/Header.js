@@ -13,7 +13,6 @@ class Header extends React.PureComponent {
 
   render() {
     const { scrollPosition } = this.props;
-    console.log("crollPosition", scrollPosition);
     return (
       <div
         className={
