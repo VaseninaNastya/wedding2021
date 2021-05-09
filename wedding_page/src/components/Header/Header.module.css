@@ -66,7 +66,7 @@ h1 {
 }
 .header_cloud {
   margin-top: 20px;
-  height: calc(100% - 20px);
+  height: calc(100% - 50px);
   max-height: 900px;
   width: calc(90vh);
   background-image: url("../../img/1314957.png");
