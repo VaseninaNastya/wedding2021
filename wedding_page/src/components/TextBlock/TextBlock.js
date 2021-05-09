@@ -170,17 +170,18 @@ class TextBlock extends React.PureComponent {
               </p>
               <div className="main_info_container2">
                 <h3> И еще разок, самое главное: </h3>
-                <ul className="main_info_2">
-                  <li>Дата: 25.07.2021 (воскресенье)</li>
-                  <li>
-                    Место:{" "}
-                    <a target="_blank" href="https://yandex.ru/maps/-/CCU4Q4TClC">
-                      Пикник-парк “Лесок”
-                    </a>
-                  </li>
-                  <li>Начало: 14.00</li>
-                </ul>
-                <h3> Ждем вас, друзья!</h3>
+
+              <ul className="main_info_2">
+                <li>Дата: 25.07.2021 (воскресенье)</li>
+                <li>Место: <a target="_blank" href="https://yandex.ru/maps/-/CCU4Q4TClC">Пикник-парк “Лесок”</a></li>
+                <li>Начало: 14.00</li>
+              </ul>
+              <h3> Ждем вас, друзья!</h3>
+              <div className = "ps">
+P.s.: Пролистни ниже, там анкета участника. Будем благодарны заполнившим =)
+</div>
+
+
               </div>
             </div>
             <div className={s.talents_picture}></div>
