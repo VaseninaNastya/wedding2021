@@ -17,47 +17,16 @@ class TextBlock extends React.PureComponent {
     return (
       <>
         <Header scrollPosition={this.state.scrollPosition} />
-        <div
-          className={
-            this.state.scrollPosition * 7 >=
-            document.documentElement.clientHeight
-              ? "picture_container__active picture_container c-animated-background"
-              : "picture_container c-animated-background"
-          }
-        >
-          <div
-                style={
-                  this.state.scrollPosition >=
-                  document.documentElement.clientHeight*0.9 
-                    ? {
-                        marginLeft:
-                          this.state.scrollPosition + "px",   marginTop: 0,   marginRight: 200 + 'px'
-                      }
-                    : {
-                      marginTop:
-                      this.state.scrollPosition + "px",   marginLeft: 0,   marginRight:    this.state.scrollPosition + "px",   
-
-                    }
-                }
-            className={
-              this.state.scrollPosition >=
-              document.documentElement.clientHeight*0.9
-                ? "picture__active picture"
-                : "picture"
-            }
-          >
-          </div>
-        </div>
         <div className={s.mainInfo}>
           <div
             className={
               this.state.scrollPosition >
                 document.documentElement.clientHeight &&
               this.state.scrollPosition <=
-                document.documentElement.clientHeight * 1.8
+                document.documentElement.clientHeight * 0.95
                 ? "infoForBikers_container__active"
                 : this.state.scrollPosition >
-                    document.documentElement.clientHeight * 1.8 &&
+                    document.documentElement.clientHeight * 0.95 &&
                   this.state.scrollPosition <=
                     document.documentElement.clientHeight * 2.5
                 ? "infoForBikers_container__active__fixed"
@@ -80,18 +49,20 @@ class TextBlock extends React.PureComponent {
             </div>
 
             <div className={s.infoForBikers_picture_container}>
+              <div className="trees_front"></div>
+              <div className="trees_back"></div>
               <div
                 style={
                   this.state.scrollPosition >=
-                    document.documentElement.clientHeight * 1.4 &&
+                    document.documentElement.clientHeight &&
                   this.state.scrollPosition <=
-                    document.documentElement.clientHeight * 2.8
+                    document.documentElement.clientHeight * 2.5
                     ? {
                         marginLeft:
                           (this.state.scrollPosition *
                             this.state.scrollPosition) /
                             2800 -
-                          1000 +
+                          700 +
                           "px",
                       }
                     : this.state.scrollPosition >=
@@ -105,9 +76,7 @@ class TextBlock extends React.PureComponent {
                     ? "picture_bike__active picture_bike"
                     : "picture_bike"
                 }
-              >
-
-              </div>
+              ></div>
             </div>
 
             <p className={s.infoForBikers_text}>
@@ -137,10 +106,11 @@ class TextBlock extends React.PureComponent {
           <div
             className={
               this.state.scrollPosition <
-              document.documentElement.clientHeight * 2.5
+              document.documentElement.clientHeight * 2.4
                 ? "infoForCarRiders_container__fixed"
-                : this.state.scrollPosition >
-                  document.documentElement.clientHeight * 3.5
+                : this.state.scrollPosition >=
+                document.documentElement.clientHeight * 2.4 && this.state.scrollPosition >=
+                  document.documentElement.clientHeight * 3.45
                 ? "infoForCarRiders_container__active__bright"
                 : "infoForCarRiders_container__active"
             }
@@ -173,10 +143,11 @@ class TextBlock extends React.PureComponent {
               }
             ></div>
           </div>
+
           <div
             className={
               this.state.scrollPosition >
-              document.documentElement.clientHeight * 4
+              document.documentElement.clientHeight * 3.9
                 ? "talents_container__active talents_container"
                 : "talents_container"
             }
@@ -189,36 +160,49 @@ class TextBlock extends React.PureComponent {
                   показывать свои таланты публично. Таких гостей мы приветсвуем
                   особенно! Если ты хочешь исполнить песню, танец, сыграть на
                   музыкальном инструменте, рассказать стихотворение, как-то
-                  особенно нас поздравить - отлично! Напиши о своих планах Коле
-                  или Насте, или в анкете ниже, мы будем очень рады.
+                  особенно нас поздравить - отлично! Обязательно напиши о своих
+                  планах и идеях Коле или Насте, или в анкете ниже, мы будем
+                  очень рады.
                 </div>
               </p>
               <p
                 className={
                   this.state.scrollPosition >
-                  document.documentElement.clientHeight * 4.4
+                  document.documentElement.clientHeight * 4.1
                     ? "afterparty__active afterparty"
                     : "afterparty"
                 }
               >
                 <div className={s.talents_title}>
-                В 20.00 официальная часть празника закончится, <br/> но вы можете
-                выбрать:
+                  В 20.00 официальная часть празника закончится, <br /> но вы
+                  можете выбрать:
                 </div>
                 <ul>
                   <li>
-                  &#9829; Довольные и нарядные, вы едете в Питер, вспоминать лес и
-                    возвращаться к впечатлениям дня во сне. Последние электрички
-                    со станции Грузино - в 21.30 и 22.24.
+                    &#9829; Довольные и нарядные, вы едете в Питер, вспоминать
+                    лес и возвращаться к впечатлениям дня во сне. Последние
+                    электрички со станции Грузино - в 21.30 и 22.24.
                   </li>
                   <li>
-                  &#9829; Так же довольные и нарядные, вы остаетесь с нами на
+                    &#9829; Так же довольные и нарядные, вы остаетесь с нами на
                     афтепати, ночевать в глемпинге. Вечеринка продолжается! Если
                     вы хотите и можете остаться - напишите об этом в анкете
                     ниже, или Насте/Коле лично.
                   </li>
                 </ul>
               </p>
+              <div className = "main_info_container2">
+                <h3> И еще разок, самое главное: </h3>
+              <ul className="main_info_2">
+                <li>Дата: 25.07.2021</li>
+                <li>Место: Пикник-парк “Лесок”</li>
+                <li>Начало: 14.00</li>
+              </ul>
+              <h3> Ждем вас, друзья!</h3>
+              </div>
+              <span className = "ps">
+                P.S.: Ответьте, пожалуйста, <br/>на несколько вопросов ниже =)
+              </span>
             </div>
             <div className={s.talents_picture}></div>
           </div>
