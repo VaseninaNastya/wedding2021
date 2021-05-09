@@ -362,10 +362,12 @@ a:hover {
   padding: 7px;
 }
 .ps {
-  margin-top: 20px;
+  display: none;
+  margin-top: 5px;
 }
 
 @media (max-width: 1199px) and (min-width: 767px)  {
+  
   .container {
     width: 100%;
   }
@@ -428,6 +430,12 @@ a:hover {
   }
   .talents_title{
     padding-bottom: 0;
+  }
+  .talents{
+    margin-bottom: 5px;
+  }
+  .main_info_container2{
+    margin-top: 5px;
   }
 }
 
@@ -573,14 +581,16 @@ height: 300px;
 width: 100%;
   }
   .talents,
-  .afterparty, .ps {
+  .afterparty {
     margin: 0;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
     border-radius: 10px;
   }
   .ps{
+    display: inherit;
     width: auto !important;
+    font-weight: 500;
   }
   .talents_title{
 padding-bottom: 5px;
@@ -793,13 +803,16 @@ height: 300px;
 width: 100%;
   }
   .talents,
-  .afterparty, .ps {
+  .afterparty {
     margin: 0;
     background-color: rgba(255, 255, 255, 0.9);
     padding: 5px;
     border-radius: 10px;
   }
   .ps{
+    font-size: 16px;
+    line-height: 20px;
+    display: inherit;
     width: auto !important;
   }
   .talents_title{

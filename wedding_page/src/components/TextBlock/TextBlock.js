@@ -198,6 +198,9 @@ class TextBlock extends React.PureComponent {
                 <li>Начало: 14.00</li>
               </ul>
               <h3> Ждем вас, друзья!</h3>
+              <div className = "ps">
+P.s.: Пролистни ниже, там анкета участника. Будем благодарны заполнившим =)
+</div>
               </div>
             </div>
             <div className={s.talents_picture}></div>
