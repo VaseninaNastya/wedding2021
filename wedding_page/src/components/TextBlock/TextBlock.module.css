@@ -367,6 +367,14 @@ a:hover {
 }
 
 @media (max-width: 1199px) and (min-width: 767px)  {
+  .talentsAndAfterParty_text{
+    width: 75%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .talents_picture{
+    width: 25%;
+  }
   
   .container {
     width: 100%;
