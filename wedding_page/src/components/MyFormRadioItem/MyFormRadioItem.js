@@ -14,7 +14,7 @@ class MyFormRadioItem extends React.PureComponent {
         Да
       </label>
       <label>
-      &nbsp;<input type="radio" name={name} value="нет" />&nbsp;
+      &nbsp;<input type="radio" name={name} value="Нет" />&nbsp;
         Нет
       </label>
     </div>
