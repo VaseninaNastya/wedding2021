@@ -1,6 +1,6 @@
 .form_container{
   width: 1100px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 form{  
   display: flex;
@@ -22,6 +22,9 @@ form{
 
   background-color: hsl(70, 100%, 55%);
 
+}
+.formSended_text{
+  margin-bottom: 20px;
 }
 @media (max-width: 1199px) and (min-width: 767px) {
   .form_container{
