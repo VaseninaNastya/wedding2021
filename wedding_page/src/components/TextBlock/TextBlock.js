@@ -71,7 +71,7 @@ class TextBlock extends React.PureComponent {
               ></div>
             </div>
 
-            <p className={s.infoForBikers_text}>
+            <div className={s.infoForBikers_text}>
               <span className="infoForBikers_text_title">Если ты планируешь добраться до места вместе с нами (на электричке):</span>
               <p>
                 ждем тебя на Финляндском вокзале, в 11.30. Велосипеды
@@ -88,7 +88,7 @@ class TextBlock extends React.PureComponent {
                 </a>
                 &nbsp;- там будет вся актуальная информация и координация.
               </p>
-            </p>
+            </div>
           </div>
           <div
             className={
@@ -134,7 +134,7 @@ class TextBlock extends React.PureComponent {
             }
           >
             <div className={s.talentsAndAfterParty_text}>
-              <p className={s.talents}>
+              <div className={s.talents}>
                 <div className={s.talents_title}>Важное объявление!</div>
                 <div>
                   Мы знаем, все наши друзья талантливы, а некоторые даже готовы показывать свои таланты публично. Таких гостей мы
@@ -142,8 +142,8 @@ class TextBlock extends React.PureComponent {
                   стихотворение, как-то особенно нас поздравить - отлично! Обязательно напиши о своих планах и идеях Коле или Насте, или в
                   анкете ниже, мы будем очень рады.
                 </div>
-              </p>
-              <p
+              </div>
+              <div
                 className={
                   this.state.scrollPosition > document.documentElement.clientHeight * 4.1 ? "afterparty__active afterparty" : "afterparty"
                 }
@@ -169,7 +169,7 @@ class TextBlock extends React.PureComponent {
                     вы хотите и можете остаться - напишите об этом в анкете ниже, или Насте/Коле лично.
                   </li>
                 </ul>
-              </p>
+              </div>
               <div className="main_info_container2">
                 <h3> И еще разок, самое главное: </h3>
 

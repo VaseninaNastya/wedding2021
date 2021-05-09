@@ -13,11 +13,11 @@ class GoogleFormAPI {
       },
     })
       .then((response) => {
-        console.log(response);
+        // console.log(response);
         return response;
       })
       .catch((error) => {
-          console.log(error);
+          // console.log(error);
        return Error(error);
       });
   }

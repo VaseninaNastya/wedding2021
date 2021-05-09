@@ -80,9 +80,9 @@ class MyForm extends React.PureComponent {
       "&" +
       resSongs;
 
-    console.log(">>", str);
+    // console.log(">>", str);
     let result = await api.sendResult(str);
-    console.log("result", result);
+    // console.log("result", result);
     this.setState({
       formSended: true,
     });
@@ -109,14 +109,14 @@ class MyForm extends React.PureComponent {
             {" "}
             <form>
               <h3>Ответь, пожалуйста, на несколько вопросов:</h3>
-              {MyFormInputItemList.map((item) => (
-                <MyFormInputItem name={item.name} itemLabel={item.label} number={item.number} />
+              {MyFormInputItemList.map((item,index) => (
+                <MyFormInputItem name={item.name} key={index} itemLabel={item.label} number={item.number} />
               ))}
-              {MyFormRadioItemList.map((item) => (
-                <MyFormRadioItem name={item.name} itemLabel={item.label} number={item.number} />
+              {MyFormRadioItemList.map((item,index) => (
+                <MyFormRadioItem name={item.name} key={index} itemLabel={item.label} number={item.number} />
               ))}
-              {MyFormTextareaItemList.map((item) => (
-                <MyFormTextareaItem name={item.name} itemLabel={item.label} number={item.number} />
+              {MyFormTextareaItemList.map((item,index) => (
+                <MyFormTextareaItem name={item.name} key={index} itemLabel={item.label} number={item.number} />
               ))}
             </form>
             <button onClick={this.handlerSendForm.bind(this)} className="submit_button" style={{ order: 11 }}>
