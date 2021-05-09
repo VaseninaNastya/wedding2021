@@ -207,7 +207,7 @@ li {
   margin-top: 20px;
 }
 .infoForCarRiders {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -318,6 +318,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin: 0 auto;
 }
 .talents {
   margin-top: 100vh;
@@ -364,7 +365,7 @@ a:hover {
   margin-top: 20px;
 }
 
-@media (max-width: 1199px) and (min-width: 767px) {
+@media (max-width: 1199px) and (min-width: 767px)  {
   .container {
     width: 100%;
   }
@@ -528,6 +529,226 @@ height: 300px;
   .header .h1 {
     height: 50%;
   }
+  .main_info_container,
+  .main_info_container__active {
+    height: 50% !important;
+  }
+  .infoForCarRiders,
+  .plans {
+    width: 90%;
+  }
+  .infoForBikers_container__active__fixed,
+  .infoForCarRiders_container__fixed,
+  .infoForCarRiders_container__active,
+  .infoForCarRiders_container__active__bright,
+  .talents_container,
+  .talents_container__active,
+  .form_container,
+  .infoForBikers_container{
+    position: static;
+  }
+  .infoForCarRiders_container__fixed,
+  .infoForCarRiders_container__active,
+  .infoForCarRiders_container__active__bright{
+    background-image: none;
+    background: inherit;
+    height: auto;
+  }
+  .talents_picture{
+    display: none;
+  }
+  .talents_container,
+  .talents_container__active{
+    background-image: url("../../img/we2_outlined_trees_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 10px;
+    height: auto;
+  }
+  .infoForBikers_container__active__fixed_after {
+    top: 0vh;
+  }
+  .talentsAndAfterParty_text{
+width: 100%;
+  }
+  .talents,
+  .afterparty, .ps {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .ps{
+    width: auto !important;
+  }
+  .talents_title{
+padding-bottom: 5px;
+  }
+  .afterparty {margin-top: 20px;}
+  .main_info_container2{
+margin-bottom: 800px;
+width: 90%;
+padding: 5px;
+background-color: rgba(255, 255, 255, 0.9);
+  }
+  .trees_front {
+    top: calc(80%);
+    bottom: 0;
+    height: 50%;
+    width: 50%;
+  }
+  .infoForBikers_picture_container{
+    margin-top: 20px;
+  }
+  .picture_bike, .picture_bike__active{
+    margin: 5% !important;
+    height: 70%;
+    width: 100%;
+    bottom: 10%;
+  }
+  .mainInfo{
+position: static;
+height: auto;
+  }
+  .form_Item_container_radio label:first-child{
+    width: 70%;
+  }
+  .form_container{
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-aspect-ratio: 1/2) and (max-height: 600px) {
+  .lesok_picture_container__black,
+  .lesok_picture_container__white {
+    height: 50vh;
+    width: calc(2.35 * 50vh);
+  }
+  .talentsAndAfterParty_text{
+    width: 75%;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .talents_picture{
+    width: 25%;
+  }
+  .infoForBikers_text {
+    width: 90%;
+    line-height: 22px;
+font-size: 16px;
+  }
+  .infoForBikers_titles h2{
+margin-top: 5px;
+margin-bottom: 5px;
+  }
+  .infoForBikers_picture_container{
+    margin-top: 5px;
+    height: 35vh;
+  }
+  .picture_bike {
+    margin-top: calc(15vh - 20px);}
+  .infoForCarRiders, .plans{
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .plans{
+    width: 60%;
+  }
+}
+
+@media (min-aspect-ratio: 1/2) and (max-height: 520px) {
+  .container {
+    width: 100%;
+  }
+  .picture_container {
+    width: 100%;
+  }
+  .lesok_picture_container__black,
+  .lesok_picture_container__white,
+  .infoForCarRiders_container__fixed {
+    width: 100%;
+
+  }
+  .talents_container__active,
+  .talents_container,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active,
+  .infoForBikers_container,
+  .picture_container__active,
+  .picture_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+  .talents_container {
+    width: 100%;
+    left: calc(50% - 100vw / 2);
+  }
+  .infoForBikers_container__active__fixed,
+  .infoForBikers_container__active__fixed_after,
+  .infoForBikers_container,
+  .infoForBikers_container__active {
+    left: 0;
+    padding: 15px;
+    height: auto;
+  }
+  .infoForBikers_text {
+    width: 90%;
+  }
+  .infoForBikers_titles h2 {
+    line-height: 24px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .infoForBikers_titles h3 {
+    line-height: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  body {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .trees_back{
+    top: calc(10%);
+    bottom: 0;
+    right: 0;
+    height: 30%;
+    width: 30%;
+
+  }
+  .infoForBikers_picture_container{
+height: 300px;
+  }
+  .infoForBikers_text {
+    line-height: inherit;
+  }
+ .lesok_picture_container__black,
+  .lesok_picture_container__white {
+    width: 90%;
+    margin-top: 30vh;
+    margin-bottom: 10px;
+    height: 45vw;
+  }
+  .infoForBikers_text {
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .infoForBikers_text p br {
+    height: 0px;
+  }
+  .infoForBikers_titles {
+    height: auto;
+  }
+  .infoForBikers_text_title {
+    margin-bottom: 0;
+  }
+
   .main_info_container,
   .main_info_container__active {
     height: 50% !important;

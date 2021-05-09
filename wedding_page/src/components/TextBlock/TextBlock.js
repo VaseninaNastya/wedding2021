@@ -199,9 +199,6 @@ class TextBlock extends React.PureComponent {
               </ul>
               <h3> Ждем вас, друзья!</h3>
               </div>
-              <span className = "ps">
-                P.S.: Ответьте, пожалуйста, <br/>на несколько вопросов ниже =)
-              </span>
             </div>
             <div className={s.talents_picture}></div>
           </div>

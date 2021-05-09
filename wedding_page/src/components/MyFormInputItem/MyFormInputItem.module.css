@@ -18,3 +18,10 @@
     height: 20px;
   }
 }
+
+@media (min-aspect-ratio: 1/2) and (max-height: 520px) {
+  .form_Item_container_input input{
+    width: 280px;
+    height: 20px;
+  }
+}

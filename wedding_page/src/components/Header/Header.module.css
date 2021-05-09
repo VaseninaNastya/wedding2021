@@ -139,3 +139,22 @@ h1 {
     font-size: 5.5vw;
   }
 }
+
+@media (min-aspect-ratio: 1/2) and (max-height: 600px) {
+  .header_cloud {
+    height: calc(100%);
+    max-height: 900px;
+    width: calc(90vh);
+}
+h1 {
+  line-height: 30px;
+  font-size: 26px;}
+  .header .main_info__active, .header .main_info {
+    line-height: 24px;
+    font-size: 20px;
+  }
+  .header .main_info__active{
+    margin-bottom: 2vh;
+  }
+}
+

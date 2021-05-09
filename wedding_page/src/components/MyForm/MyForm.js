@@ -130,6 +130,7 @@ class MyForm extends React.PureComponent {
           <>
             {" "}
             <form>
+              <h3>Ответьте, пожалуйста, на несколько вопросов:</h3>
               {MyFormInputItemList.map((item) => (
                 <MyFormInputItem
                   name={item.name}
