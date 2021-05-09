@@ -22,7 +22,7 @@ class MyForm extends React.PureComponent {
     let resName =
       document.querySelector("[style='order: 1;'] input").getAttribute("name") +
       "=" +
-      document.querySelector("[style='order: 1;'] input").value;
+      encodeURIComponent(document.querySelector("[style='order: 1;'] input").value);
     let resAgree = document.querySelector("[style='order: 2;'] input:checked")
       ? document
           .querySelector("[style='order: 2;'] input")
@@ -72,13 +72,13 @@ class MyForm extends React.PureComponent {
         .querySelector("[style='order: 8;'] textarea")
         .getAttribute("name") +
       "=" +
-      document.querySelector("[style='order: 8;'] textarea").value;
+      encodeURIComponent(document.querySelector("[style='order: 8;'] textarea").value);
     let resSongs =
       document
         .querySelector("[style='order: 9;'] textarea")
         .getAttribute("name") +
       "=" +
-      document.querySelector("[style='order: 9;'] textarea").value;
+      encodeURIComponent(document.querySelector("[style='order: 9;'] textarea").value);
     let str =
       resName +
       "&" +
