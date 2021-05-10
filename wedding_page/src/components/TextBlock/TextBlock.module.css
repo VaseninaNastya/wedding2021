@@ -562,7 +562,7 @@ height: 300px;
   }
   .talents_container,
   .talents_container__active{
-    background-image: url("../../img/we2_outlined_trees_mobile.png");
+    /*background-image: url("../../img/we2_outlined_trees_mobile.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -784,7 +784,7 @@ height: 300px;
   }
   .talents_container,
   .talents_container__active{
-    background-image: url("../../img/we2_outlined_trees_mobile.png");
+    /*background-image: url("../../img/we2_outlined_trees_mobile.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
