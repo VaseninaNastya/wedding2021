@@ -623,7 +623,7 @@ height: auto;
   }
 }
 
-@media  (min-aspect-ratio: 1/2) and (max-height: 600px)  {
+@media  (min-aspect-ratio: 1/2) and (max-height: 600px) and (min-width: 370px) {
   .lesok_picture_container__black,
   .lesok_picture_container__white {
     height: 50vh;
