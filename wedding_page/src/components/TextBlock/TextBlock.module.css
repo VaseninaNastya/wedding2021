@@ -309,7 +309,7 @@ a:hover {
 }
 .talents {
   margin-top: 100vh;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transition: all 1s ease 0s;
 }
 .talents_container__active .talents {
@@ -330,13 +330,12 @@ a:hover {
   background-image: url("../../img/we2_outlined_trees.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 30px;
+  margin-left: 10px;
   background-position: bottom;
 }
 
 .talents_title {
   font-weight: 600;
-  padding-bottom: 20px;
 }
 .main_info_container2 {
   font-weight: 600;
@@ -345,8 +344,8 @@ a:hover {
   border-radius: 10px;
   width: 60%;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 7px;
+  margin-top: 10px;
+  padding: 5px;
 }
 .ps {
   display: none;
