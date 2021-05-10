@@ -1,6 +1,11 @@
 import React from "react";
 import s from "./TextBlock.module.css";
 import Header from "./../Header/Header.js";
+import Background1 from '../../img/les_dsc_1550.png';
+import Background2 from '../../img/tmb_84260_8224.png';
+
+
+
 class TextBlock extends React.PureComponent {
   constructor() {
     super();
@@ -90,12 +95,22 @@ class TextBlock extends React.PureComponent {
               </p>
             </div>
           </div>
-          <div
+          <div 
+                          style={
+                            this.state.scrollPosition < document.documentElement.clientHeight * 2.4
+                            ? {backgroundImage: "url(" + Background1 + ")"}
+                            
+                            
+                            : {backgroundImage: "url(" + Background2 + ")"}
+
+
+
+                          }
             className={
               this.state.scrollPosition < document.documentElement.clientHeight * 2.4
                 ? "infoForCarRiders_container__fixed"
                 : this.state.scrollPosition >= document.documentElement.clientHeight * 2.4 &&
-                  this.state.scrollPosition >= document.documentElement.clientHeight * 3.45
+                  this.state.scrollPosition <= document.documentElement.clientHeight * 3.45
                 ? "infoForCarRiders_container__active__bright"
                 : "infoForCarRiders_container__active"
             }

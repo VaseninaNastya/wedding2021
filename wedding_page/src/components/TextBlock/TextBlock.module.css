@@ -223,8 +223,9 @@ a:hover {
   width: 100%;
   background-size: cover;
   position: fixed;
-  background-image: url("../../img/les_dsc_1550.png");
+  /*background-image: url("../../img/les_dsc_1550.png");*/
   transition: background-image 0.5s ease 0s;
+  transition-delay : 0s;
   top: 250vh;
   width: 1200px;
   display: flex;
@@ -235,10 +236,11 @@ a:hover {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-image: url("../../img/les_dsc_1550.png");
+  /*background-image: url("../../img/les_dsc_1550.png");*/
   background-size: cover;
   top: 250vh;
   transition: background-image 0.5s ease 0s;
+  transition-delay : 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -248,10 +250,11 @@ a:hover {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-image: url("../../img/tmb_84260_8224.png");
+  /*background-image: url("../../img/tmb_84260_8224.png");*/
   background-size: cover;
   top: 250vh;
   transition: background-image 0.5s ease 0s;
+  transition-delay : 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
