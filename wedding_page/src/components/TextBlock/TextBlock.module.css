@@ -225,7 +225,7 @@ li {
   background-color: rgba(255, 255, 255, 0.85);
 }
 .plans {
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
   border-radius: 5px;
   padding: 7px;
@@ -244,7 +244,8 @@ a:hover {
   background-size: cover;
   position: fixed;
   background-image: url("../../img/les_dsc_1550.png");
-  top: 260vh;
+  transition: background-image 0.5s ease 0s;
+  top: 250vh;
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -257,7 +258,7 @@ a:hover {
   background-image: url("../../img/les_dsc_1550.png");
   background-size: cover;
   top: 250vh;
-  transition: background-image 1s ease 0s;
+  transition: background-image 0.5s ease 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -270,7 +271,7 @@ a:hover {
   background-image: url("../../img/tmb_84260_8224.png");
   background-size: cover;
   top: 250vh;
-  transition: background-image 1s ease 0s;
+  transition: background-image 0.5s ease 0s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -637,11 +638,11 @@ height: auto;
   }
 }
 
-@media (min-aspect-ratio: 1/2) and (max-height: 600px) {
+@media (min-aspect-ratio: 1/2) and (max-height: 600px)  {
   .lesok_picture_container__black,
   .lesok_picture_container__white {
     height: 50vh;
-    width: calc(2.35 * 50vh);
+    width: 100%;
   }
   .talentsAndAfterParty_text{
     width: 75%;
@@ -671,7 +672,7 @@ margin-bottom: 5px;
     font-size: 16px;
   }
   .plans{
-    width: 60%;
+    width: 80%;
   }
 }
 
