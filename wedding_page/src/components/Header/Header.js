@@ -15,8 +15,7 @@ class Header extends React.PureComponent {
     const { scrollPosition } = this.props;
     return (
       <>
-      <div className="pic1"></div>
-      <div className="pic2"></div>
+
       <div
         className={
           scrollPosition * 7 > document.documentElement.clientHeight

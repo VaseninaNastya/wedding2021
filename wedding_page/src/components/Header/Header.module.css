@@ -4,22 +4,7 @@
   flex-direction: column;
   transition: all 1s ease 0s;
 }
-.pic1{
-  height: 0px;
-  width: 0px;
-  display: none;
-  background-image: url(
-    '../../img/les_dsc_1550.png'
-  );
-}
-.pic2{
-  height: 0px;
-  width: 0px;
-  display: none;
-  background-image: url(
-    '../../img/tmb_84260_8224.png'
-  );
-}
+
 
 .header .h1 {
   display: flex;
