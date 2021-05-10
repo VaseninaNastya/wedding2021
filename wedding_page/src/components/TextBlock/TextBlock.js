@@ -3,6 +3,7 @@ import s from "./TextBlock.module.css";
 import Header from "./../Header/Header.js";
 import Background1 from '../../img/les_dsc_1550.png';
 import Background2 from '../../img/tmb_84260_8224.png';
+import Background3 from '../../img/we2_outlined_trees_mobile.png';
 
 
 
@@ -145,6 +146,12 @@ class TextBlock extends React.PureComponent {
           </div>
 
           <div
+                                    style={
+                                      (document.documentElement.clientWidth > 301 && document.documentElement.clientWidth < 767) || 
+                                      (document.documentElement.clientHeight < 520 && document.documentElement.clientWidth /document.documentElement.clientHeight >0.5)
+                                      ? {backgroundImage: "url(" + Background3+ ")"}
+                                      : {}
+                                    }
             className={
               this.state.scrollPosition > document.documentElement.clientHeight * 3.9
                 ? "talents_container__active talents_container"
