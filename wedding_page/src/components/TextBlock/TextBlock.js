@@ -98,12 +98,12 @@ class TextBlock extends React.PureComponent {
           </div>
           <div 
                           style={
-                            this.state.scrollPosition < document.documentElement.clientHeight * 1
+                            this.state.scrollPosition < document.documentElement.clientHeight * 1 && document.documentElement.clientWidth > 766
                             ? {backgroundImage: "url(" + Background1 + ")"}
                             
                             
-                            : this.state.scrollPosition >= document.documentElement.clientHeight * 1 &&
-                              this.state.scrollPosition <= document.documentElement.clientHeight * 3.45
+                            : this.state.scrollPosition >= document.documentElement.clientHeight * 1  &&
+                              this.state.scrollPosition <= document.documentElement.clientHeight * 3.45 && document.documentElement.clientWidth > 766
                             ? {backgroundImage: "url(" + Background2 + ")"}
                             : {backgroundImage: "url(" + Background1 + ")"}
 
