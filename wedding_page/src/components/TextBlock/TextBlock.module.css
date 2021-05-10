@@ -81,28 +81,8 @@ li {
   z-index: 100 !important;
   position: absolute;
 }
-@keyframes movement {
-  0% {
-    background-image: url("../../img/stars.png");
-  }
-  50% {
-    background-image: url("../../img/stars2.png");
-  }
-  100% {
-    background-image: url("../../img/stars.png");
-  }
-}
 
-.picture {
-  height: 46vh;
-  width: 30vh;
-  transform: rotate(35deg);
-  background-image: url("../../img/we_outlined.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 
-  transition: all 2.5s ease 0s;
-}
 
 .picture__active {
   transition: all 2.5s ease 0s;
